@@ -14,5 +14,6 @@ COPY $srcDir/app ./app
 EXPOSE 8081
 
 
-CMD ["gunicorn", "-b", "0.0.0.0:5000", "run:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8081", "run:app"]
+
 
